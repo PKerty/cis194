@@ -2,12 +2,11 @@ module Main where
 
 type Tower = String
 type Move = (Tower, Tower)
-            
+
 
 main :: IO ()
 -- | exerciseValue == 'b' = putStrLn (show (hanoi 4 "A" "C" "B"))
 main = putStrLn (show (isValidCardNumber(sumDigits(splitValuesToDigits(doubleEverySecondValue(toDigitsRev  4012888888881881))))))
-
 
 -- gets the digits from a number in reverse order
 toDigitsRev :: Integer -> [Integer]
